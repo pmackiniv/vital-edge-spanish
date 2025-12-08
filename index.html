@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>¿Necesita Cobertura del Marketplace para el 2026?</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Necesita Cobertura del Marketplace para el 2026?</title>
 
-  <!-- METADATOS OPEN GRAPH -->
-  <meta property="og:title" content="¿Necesita Cobertura del Marketplace para el 2026?">
-  <meta property="og:description" content="Converse vía mensaje con un Especialista de Inscripción autorizado para explorar planes del Marketplace, comparar tarifas y verificar su elegibilidad de inmediato.">
-  <meta property="og:image" content="./logo.png">
-  <meta property="og:url" content="https://pmackiniv.github.io/vital-edge-spanish/">
-  <meta property="og:type" content="website">
+<!-- Open Graph -->
+<meta property="og:title" content="¿Necesita Cobertura del Marketplace para el 2026?">
+<meta property="og:description" content="Converse vía mensaje con un Especialista de Inscripción autorizado para explorar planes del Marketplace, comparar tarifas y verificar su elegibilidad de inmediato.">
+<meta property="og:image" content="https://pmackiniv.github.io/vital-edge-spanish/logo.png">
+<meta property="og:url" content="https://pmackiniv.github.io/vital-edge-spanish/">
+<meta property="og:type" content="website">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="¿Necesita Cobertura del Marketplace para el 2026?">
+<meta name="twitter:description" content="Converse vía mensaje con un Especialista de Inscripción autorizado para explorar planes del Marketplace, comparar tarifas y verificar su elegibilidad de inmediato.">
+<meta name="twitter:image" content="https://pmackiniv.github.io/vital-edge-spanish/logo.png">
 
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="¿Necesita Cobertura del Marketplace para el 2026?">
-  <meta name="twitter:description" content="Converse vía mensaje con un Especialista de Inscripción autorizado para explorar planes del Marketplace, comparar tarifas y verificar su elegibilidad de inmediato.">
-  <meta name="twitter:image" content="./logo.png">
-
-  <style>
-    body {
-      font-family: "Times New Roman", serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color: #f5f5f5;
-    }
-    .container {
-      max-width: 480px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #ffffff;
-    }
-    .logo {
-      width: 120px;
-      height: auto;
-      margin: 0 auto 10px;
-    }
-    h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    .button {
-      display: block;
-      width: 100%;
-      margin: 10px 0;
-      padding: 12px 20px;
-      font-size: 16px;
-      color: #ffffff;
-      background-color: #007bff;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    .consent {
-      font-size: 12px;
-      color: #555555;
-      margin-top: 20px;
-    }
-  </style>
+<style>
+body { font-family: "Times New Roman", serif; background-color: #f6f6f6; margin:0; padding:0; color:#1a1a1a; text-align: center; }
+.card { max-width: 650px; margin: 40px auto 24px; background:#fff; padding:24px 28px; border-radius:14px; border:1px solid #e2e2e2; box-shadow:0px 4px 14px rgba(0,0,0,0.04); }
+.headshot { width:145px; height:145px; border-radius:50%; object-fit:cover; margin:0 auto 12px; border:3px solid #e6e6e6; }
+.logo { width:160px; margin:10px auto 20px; display:block; }
+.name-credentials { font-size:22px; font-weight:700; margin:8px 0 12px; }
+.contact-button { display:block; width:100%; padding:14px; margin-bottom:12px; border-radius:8px; font-size:18px; font-weight:bold; color:#fff; text-decoration:none; cursor:pointer; }
+.sms-btn { background-color:#0d6efd; }
+.whatsapp-btn { background-color:#25d366; }
+.call-btn { background-color:#32a852; }
+.cta-section { max-width:650px; margin:0 auto 24px; background:#fff; padding:20px 28px; border-radius:14px; border:1px solid #e2e2e2; box-shadow:0 4px 14px rgba(0,0,0,0.03); }
+.cta-section h2 { font-size:26px; margin:0 0 12px; font-weight:700; }
+.cta-section p { font-size:18px; line-height:1.5; margin-bottom:20px; }
+.eligibility-btn { display:block; width:100%; padding:15px; font-size:18px; border-radius:8px; font-weight:bold; color:#fff; background-color:#ff6600; text-align:center; text-decoration:none; cursor:pointer; margin:12px auto; }
+.disclaimer, .footer-consent { max-width:650px; margin:0 auto; padding:12px 28px; font-size:14px; line-height:1.5; color:#555; text-align:left; }
+.checkbox-container { max-width:650px; margin:0 auto 12px; padding:0 28px; font-size:14px; text-align:left; }
+.checkbox-container input[type="checkbox"] { margin-right:8px; }
+</style>
+<script>
+function checkConsent(event) {
+  var cb = document.getElementById('consent-checkbox');
+  if (!cb.checked) {
+    event.preventDefault();
+    alert('Por favor confirme su consentimiento antes de continuar.');
+    return false;
+  }
+  return true;
+}
+</script>
 </head>
-
 <body>
-  <div class="container">
-    <img src="./patrick-mackin-headshot.png" alt="Patrick Mackin IV" class="logo">
-    <h1>¿Necesita Cobertura del Marketplace para el 2026?</h1>
-    <p>Converse vía mensaje de texto o WhatsApp con un Especialista de Inscripción autorizado para conocer sus opciones de planes del Marketplace para el 2026 y verificar su elegibilidad de manera inmediata.</p>
 
-    <!-- BOTONES -->
-    <a href="sms:+13522148879?&body=Hola,%20me%20gustar%C3%ADa%20verificar%20mi%20elegibilidad%20en%20el%20Marketplace." class="button">Enviar SMS a un Especialista</a>
+<div class="card">
+  <img src="./patrick-mackin-headshot.png" alt="Patrick Mackin IV" class="headshot">
+  <img src="./logo.png" alt="Logo de Vital Edge Insurance" class="logo">
+  <div class="name-credentials">Patrick Mackin IV — Especialista en Inscripciones</div>
+  <a href="sms:+13522148879?&body=Hola,%20me%20gustar%C3%ADa%20verificar%20mi%20elegibilidad%20en%20el%20Marketplace." class="contact-button sms-btn" onclick="checkConsent(event)">Enviar SMS</a>
+  <a href="https://wa.me/13522148879?text=Hola,%20me%20gustar%C3%ADa%20verificar%20mi%20elegibilidad%20en%20el%20Marketplace." class="contact-button whatsapp-btn" onclick="checkConsent(event)">WhatsApp</a>
+  <a href="tel:+13522148879" class="contact-button call-btn" onclick="checkConsent(event)">Llamar</a>
+</div>
 
-    <a href="https://wa.me/13522148879?text=Hola,%20me%20gustar%C3%ADa%20verificar%20mi%20elegibilidad%20en%20el%20Marketplace." class="button">Iniciar conversación por WhatsApp</a>
+<div class="cta-section">
+  <h2>¿Necesita Cobertura del Marketplace?</h2>
+  <p>Converse vía mensaje de texto o WhatsApp con un Especialista de Inscripción autorizado para explorar planes del Marketplace para el 2026 y verificar su elegibilidad al instante.</p>
+</div>
 
-    <a href="https://www.healthsherpa.com/?agent_id=patrick-mackin-iv&_agent_id=patrick-mackin-iv" class="button">Verificar Elegibilidad Ahora</a>
+<div class="disclaimer">
+  <strong>Descargo de responsabilidad del Marketplace:</strong> No ofrecemos todos los planes disponibles en su área. La información que proporcionamos se limita a los planes que ofrecemos en su área. Visite HealthCare.gov para obtener más información.<br>
+  Vital Edge Insurance no está afiliada ni respaldada por el gobierno de los Estados Unidos ni por el Mercado de Seguros de Salud federal.
+</div>
 
-    <a href="tel:+13522148879" class="button">Llamar: (352) 214-8879</a>
+<div class="checkbox-container">
+  <label>
+    <input type="checkbox" id="consent-checkbox">
+    Confirmo que autorizo a Vital Edge Insurance a contactarme con respecto a opciones de seguros del Marketplace. Entiendo que el consentimiento es voluntario y puede revocarse en cualquier momento.
+  </label>
+</div>
 
-    <div class="consent">
-      Al proporcionar su información, usted autoriza a Vital Edge Insurance y a sus agentes a comunicarse con usted sobre opciones de seguro del Marketplace. El consentimiento es voluntario y puede revocarse en cualquier momento. Pueden aplicarse tarifas de mensajes y datos.
-    </div>
-  </div>
+<a href="https://www.healthsherpa.com/?agent_id=patrick-mackin-iv&_agent_id=patrick-mackin-iv" class="eligibility-btn" onclick="checkConsent(event)">Verificar Elegibilidad Ahora</a>
+
+<div class="footer-consent">
+  Al proporcionar su información, usted autoriza a Vital Edge Insurance y a sus agentes a comunicarse con usted respecto a opciones de seguro del Marketplace. El consentimiento es voluntario y puede revocarse en cualquier momento.
+</div>
+
 </body>
 </html>
